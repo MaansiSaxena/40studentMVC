@@ -1,0 +1,36 @@
+﻿@model WebApplication6.Models.StudentDetailsViewModel
+<html>
+    <head>
+        <title>@Model.Title</title>
+    </head>
+    <body>
+        <div class=" jumbotron-fluid ">
+            <h1>@Model.Header</h1>
+        </div>
+        <div>
+            Student Id : @Model.student.StudentId
+        </div>
+        <div>
+            Student Name : @Model.student.Name
+        </div>
+        <div>
+            Student Gender : @Model.student.Gender
+        </div>
+        <div>
+            Student Branch : @Model.student.Branch
+        </div>
+        <hr />
+        <div>
+            Student City : @Model.address.City
+        </div>
+        <div>
+            Student State : @Model.address.State
+        </div>
+        <div>
+            Student Country : @Model.address.Country
+        </div>
+        <div>
+            Student PinCode : @Model.address.Pincode
+        </div>
+    </body>
+</html>
